@@ -1,0 +1,155 @@
+@import '~antd/lib/style/themes/default.less';
+
+.main {
+  width: 368px;
+  margin: 0 auto;
+  @media screen and (max-width: @screen-sm) {
+    width: 95%;
+  }
+
+  .icon {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.2);
+    margin-left: 16px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+  .other {
+    text-align: left;
+    margin-top: 24px;
+    line-height: 22px;
+
+    .register {
+      float: right;
+    }
+  }
+}
+
+.full_screen {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .left_bg {
+    width: 1000px;
+    height: 672px;
+    position: relative;
+    .left_bg_img{
+      width: 100%;
+      height: 100%;
+    }
+    .login_logo{
+      max-width: 200px;
+      max-height: 50px;
+      position: absolute;
+      left: 90px;
+      top: 87px;
+      z-index: 2;
+    }
+  }
+
+  .right_bg {
+    position: absolute;
+    bottom: 130px;
+    right: 80px;
+    z-index: 2;
+    width: 410px;
+    height: 420px;
+    background: #fff;
+    border-radius: 0 6px 6px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px 45px 22px;
+    margin-left: -10px;
+
+    .login_title {
+      font-size: 30px;
+      font-weight: bold;
+      color: #FC7B0C;
+      font-family: 'MicrosoftYaHei-Bold';
+      letter-spacing: 2px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .sld_login_btn_wrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 65px;
+      .sld_login_btn{
+        cursor: pointer;
+        width: 300px;
+        height: 40px;
+        background: #FF7505;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 19px;
+        letter-spacing: 1px;
+        font-weight: bold;
+      }
+    }
+
+    .info_wrap {
+      width: 340px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+
+    .autoPwd {
+      color: #999999;
+      font-size: 12px;
+    }
+  }
+}
+
+.formlogin {
+  :global {
+    .ant-input {
+      height: 40px !important;
+      line-height: 40px !important;
+      background-color: transparent !important;
+      border: 1px solid #E5E5E5 !important;
+      -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+      outline: none;
+    }
+
+    .ant-input-affix-wrapper .ant-input:not(:first-child) {
+      padding-left: 40px !important;
+      color: #333 !important;
+      font-size: 14px !important;
+    }
+
+    .ant-input:focus {
+      border-color: transparent;
+      outline: 0;
+      -webkit-box-shadow: 0 0 0 0 !important;
+      box-shadow: 0 0 0 0 !important;
+    }
+
+    .ant-input-affix-wrapper .ant-input-suffix{
+      right: 1px !important;
+    }
+  }
+
+  .verification_code {
+    width: 96px;
+    height: 40px;
+    margin-right: 0px;
+    border-radius: 0 3px 3px 0;
+  }
+}

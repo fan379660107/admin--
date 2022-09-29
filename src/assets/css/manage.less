@@ -1,0 +1,98 @@
+@import "~antd/lib/style/themes/default.less";
+
+.tableListForm {
+  :global {
+    .ant-form-item {
+      margin-bottom: 24px;
+      margin-right: 0;
+      display: flex;
+      > .ant-form-item-label {
+        width: auto;
+        line-height: 32px;
+        padding-right: 8px;
+      }
+    }
+    .ant-form-item-control-wrapper {
+      flex: 1;
+    }
+  }
+  .submitButtons {
+    white-space: nowrap;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: @screen-lg) {
+  .tableListForm :global(.ant-form-item) {
+    margin-right: 24px;
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .tableListForm :global(.ant-form-item) {
+    margin-right: 8px;
+  }
+}
+.select_width{
+  width: 100%;
+}
+.to_top{
+  margin-top: 30px;
+}
+.splitLine {
+  background: @border-color-split;
+  display: inline-block;
+  margin: 0 8px;
+  width: 1px;
+  height: 12px;
+}
+.formlabel{
+  label{
+    font-size: 14px;
+  }
+}
+.member_avatar{
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+}
+.member_info{
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+  span{
+    display: block;
+  }
+}
+.img_name{
+  display: inline-block;
+  vertical-align: middle;
+}
+.eval_pic_ul{
+  clear: both;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-left: 0;
+  .eval_pic_li{
+    float: left;
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 5px 6px 5px 0;
+    img{
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
+
+.eva_part{
+  :global{
+    .ant-rate{
+      font-size: 17px !important;
+    }
+  }
+}

@@ -1,0 +1,162 @@
+.common_title {
+  font-size: 14px;
+  color: #333;
+  margin: 20px 0 10px 0;
+}
+
+.basic_info {
+  border: 1px solid #f2f2f2;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  padding-left: 0;
+  box-sizing: border-box;
+
+  .item_text {
+    color: #333;
+  }
+
+  .basic_portrait {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+
+    img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: block;
+      margin-bottom: 17px;
+    }
+  }
+
+  .basic_introduce_wrap {
+    flex: 1;
+    padding-left: 20px;
+    border-left: 1px solid #f2f2f2;
+    box-sizing: border-box;
+
+    .basic_introduce {
+      display: flex;
+      background: #FCF9F7;
+      padding: 10px 0;
+      flex: 1;
+
+      .introduce_item {
+        flex: 1;
+        border-right: 1px solid rgba(0, 0, 0, 0.05);
+        padding: 0 20px;
+        color: #666;
+
+        &:last-of-type {
+          border: none;
+        }
+
+        p {
+          height: 28px;
+          line-height: 28px;
+        }
+
+      }
+    }
+
+    .basic_row {
+      margin-top: 10px;
+      border-top: 1px solid rgba(248, 248, 248, 1);
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        color: #666;
+        margin-top: 15px;
+        flex: 1;
+      }
+    }
+  }
+
+}
+
+.trading_info {
+  border: 1px solid #f2f2f2;
+  border-radius: 3px;
+
+  .trading_row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+
+    &:first-of-type {
+      background: #FFFAF7;
+      color: #333;
+
+    }
+
+    &:last-of-type {
+      height: 52px;
+      align-items: center;
+      color: #666;
+
+    }
+
+    .trading_item {
+      height: 30px;
+      line-height: 30px;
+      box-sizing: border-box;
+      flex: 1;
+      text-align: center;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+}
+
+@baseWidth: 1920px;
+
+//自适应高度
+.calc_height(@w,@h) {
+  @scale: @w / @h;
+  height: (@w / @baseWidth) * 100vw / @scale;
+}
+
+.assets_info {
+  display: flex;
+  justify-content: space-between;
+
+  .assets_item {
+    width: 32.5%;
+    .calc_height(555, 190);
+    position: relative;
+
+    &:nth-of-type(1) {
+      background: url('@/assets/balance_bj.png') no-repeat;
+      background-size: contain;
+    }
+
+    &:nth-of-type(2) {
+      background: url('@/assets/integral_bj.png') no-repeat;
+      background-size: contain;
+    }
+
+    &:nth-of-type(3) {
+      background: url('@/assets/coupons_bj.png') no-repeat;
+      background-size: contain;
+    }
+
+    p {
+      position: absolute;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      font-family: DIN Black;
+      top: 49%;
+      left: 7%;
+      width: 66%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      transform: translateY(-30%);
+    }
+  }
+}

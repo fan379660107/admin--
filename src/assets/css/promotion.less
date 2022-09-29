@@ -1,0 +1,496 @@
+.voucher_num {
+  color: #FF6A12;
+  cursor: pointer;
+}
+
+.full_activity {
+  .full_acm_activity {
+    .item {
+      padding-top: 15px;
+
+      .left {
+        width: 200px;
+        height: 32px;
+        line-height: 32px;
+        text-align: right;
+        padding-right: 20px;
+        font-size: 13px;
+      }
+
+      .right {
+        .reset_sel {
+          font-size: 13px;
+          cursor: pointer;
+          color: #FF711E;
+          margin-left: 0;
+          margin-top: 9px;
+          margin-bottom: 10px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  .flex_zi {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .common_title_bg {
+    height: 36px;
+    line-height: 36px;
+    background: #FFFAF7;
+    border-radius: 2px;
+    width: 100%;
+
+    .title {
+      color: #333;
+      font-size: 13px;
+      padding-left: 10px;
+    }
+
+    .del_ladder_pro {
+      display: none;
+      padding-right: 15px;
+      padding-top: 7px;
+    }
+  }
+
+  .add_new {
+    margin-top: 15px;
+    height: 40px;
+    background: #FFFAF7;
+    border-radius: 3px;
+    width: 100%;
+
+    .add_new_tip {
+      color: #FF7F40;
+      font-size: 12px;
+      margin-left: 10px;
+    }
+  }
+
+  .sel_goods {
+    padding-left: 24px;
+
+    .sel_tip {
+      font-size: 12px;
+      color: #999;
+    }
+
+    .reset_sel_goods {
+      cursor: pointer;
+      font-size: 12px;
+      color: #FF7F40;
+    }
+
+    .goods_info {
+      margin-left: 10px;
+      margin-top: 5px;
+      height: 60px;
+      padding: 10px;
+      max-width: 700px;
+      min-width: 260px;
+      background: #f8f8f8;
+      border-radius: 3px;
+
+      .left {
+        width: 40px !important;
+        height: 40px !important;
+        flex-shrink: 0;
+        border-radius: 3px;
+        padding-right: 0 !important;
+        margin-right: 10px;
+        overflow: hidden;
+
+        img {
+          max-width: 100%;
+          max-height: 100%;
+          border-radius: 3px;
+        }
+      }
+
+      .goods_name {
+        font-size: 13px;
+        color: #333;
+      }
+
+      .goods_price {
+        font-size: 12px;
+        color: #666;
+        margin-top: 3px;
+        white-space: nowrap;
+      }
+    }
+
+  }
+
+}
+
+
+.flex_w {
+  display: flex;
+  width: 900px;
+  border: 1px solid gray;
+  padding: 5px 10px;
+  margin-top: 10px;
+  background: #eee;
+}
+
+.flex_w div {
+  margin-right: 10px;
+  text-align: center;
+  flex: 1
+}
+
+.flex_wt {
+  display: flex;
+  width: 900px;
+  border-bottom: 1px solid gray;
+  padding: 5px 10px;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray
+}
+
+.flex_wt div {
+  margin-right: 10px;
+  text-align: center;
+  flex: 1
+}
+
+.coupon_goods_operate {
+  height: 60px;
+  text-align: center;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.coupon_goods_operate svg:hover {
+  fill: #77B9FE !important;
+}
+
+.seckill {
+  .right_show_content {
+    height: 32px;
+    line-height: 32px;
+    font-size: 13px;
+  }
+
+  .sele_goods {
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    position: relative;
+
+    .del_spu {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      right: 0;
+      width: 28px;
+      height: 30px;
+    }
+
+    .goods_info {
+      height: 70px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #F4F3F8;
+
+      .goods_info_left {
+        .goods_img_wrap {
+          width: 60px;
+          height: 60px;
+          border-radius: 5px;
+          overflow: hidden;
+          flex-shrink: 0;
+
+          .goods_img {
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+
+        .goods_name {
+          color: #333;
+          font-size: 12px;
+          margin-left: 10px;
+          padding-top: 5px;
+          max-width: 320px;
+        }
+      }
+
+      .goods_info_right {
+        height: 70px;
+        padding-bottom: 10px;
+
+        .batch_btn {
+          padding: 0 15px;
+          background: #FF711E;
+          border-radius: 3px;
+          height: 30px;
+          color: #fff;
+          margin-left: 10px;
+          font-size: 13px;
+          cursor: pointer;
+
+          .sel_all {
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .ladder_part {
+      padding: 10px;
+      background: #F8F7F9;
+      margin-bottom: 10px;
+
+      .deposit_part {
+        .tip {
+          display: inline-block;
+          color: #999;
+          font-size: 12px;
+          margin-left: 20px;
+        }
+      }
+
+      .ladder_item {
+        margin-top: 10px;
+
+        .left_title {
+          display: inline-block;
+          font-weight: bold;
+          color: #333;
+          margin-right: 20px;
+        }
+      }
+
+      .add_ladder {
+        .btn {
+          color: blue;
+          display: inline-block;
+          margin-right: 10px;
+        }
+
+        .tip {
+          color: #999;
+        }
+      }
+    }
+  }
+}
+
+.spell_group_team_wrap {
+  .member {
+    width: 60px;
+    height: 31px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin: 0 10px 10px;
+    position: relative;
+
+    .avatar {
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      width: 31px;
+      height: 31px;
+      border-radius: 50%;
+      border: 1px solid #eee;
+    }
+
+    .name {
+      position: absolute;
+      z-index: 2;
+      bottom: -12px;
+      width: 60px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      height: 14px;
+      line-height: 14px;
+      background: #FF711E;
+      border-radius: 7px;
+      font-size: 12px;
+      color: #fff;
+      text-align: center;
+      padding: 0 5px;
+    }
+  }
+}
+
+.sign_activity_stat {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  padding: 0 10px;
+
+  .item {
+    max-width: 363px;
+    height: 110px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+
+    .left {
+      width: 110px;
+      height: 110px;
+
+      img {
+        width: 64px;
+        height: 64px;
+      }
+    }
+
+    .right {
+      padding-left: 20px;
+
+      .num {
+        height: 30px;
+        font-size: 36px;
+        font-family: 'Microsoft YaHei';
+        font-weight: bold;
+        color: #FFF;
+        line-height: 30px;
+        display: block;
+      }
+
+      .tip {
+        height: 20px;
+        font-size: 20px;
+        font-family: Microsoft YaHei;
+        font-weight: 400;
+        color: #FFF;
+        line-height: 30px;
+        margin-top: 15px;
+        display: block;
+      }
+    }
+  }
+}
+
+//应用中心样式-start
+.center {
+  padding: 20px;
+
+  .center_title {
+    font-weight: 600;
+    color: #404040;
+    font-size: 18px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+  }
+
+  .center_item {
+    .center_item_title {
+      margin-top: 30px;
+      font-size: 15px;
+      color: #404040;
+      font-weight: 600;
+    }
+
+    .center_item_content {
+      .child_item {
+        margin-top: 20px;
+        width: 394px;
+        height: 100px;
+        background: #f9f9f9;
+        border-radius: 10px;
+        padding-top: 20px;
+        cursor: pointer;
+
+        .left_img {
+          margin-left: 20px;
+          width: 60px;
+          height: 60px;
+        }
+
+        .right_part {
+          margin-left: 15px;
+          padding-right: 20px;
+
+          .right_part_top {
+            margin-top: 4px;
+
+            .top_title {
+              font-size: 16px;
+              font-family: PingFangSC-Semibold, PingFang SC;
+              font-weight: 600;
+              color: #404040;
+              line-height: 25px;
+            }
+
+            .top_flag {
+              display: inline-block;
+              font-size: 12px;
+              font-family: PingFangSC-Semibold, PingFang SC;
+              font-weight: 600;
+              color: #FFF;
+              background: linear-gradient(0deg, #FCC102 0%, #FFA710 100%);
+              border-radius: 10px 10px 10px 0;
+              margin-left: 10px;
+              padding: 0 10px;
+              height: 20px;
+              line-height: 20px;
+            }
+          }
+
+          .desc {
+            margin-top: 5px;
+            font-size: 14px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: rgba(64, 64, 64, .74);
+            line-height: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+  }
+}
+
+//应用中心样式-end
+.rank_load_goods_btn {
+  width: 125px;
+  height: 34px;
+  line-height: 32px;
+  text-align: center;
+  border: 1px solid rgba(255, 113, 30, 1);
+  border-radius: 2px;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 15px;
+  margin-right: 20px;
+  padding: 0 10px;
+  background: #FF6A12;
+  cursor: pointer;
+}
+
+.input_left_side_tip {
+  display: inline-block;
+  margin-right: 5px;
+  color: rgba(0, 0, 0, .65);
+}
+
+.input_right_side_tip {
+  display: inline-block;
+  margin-left: 5px;
+  color: rgba(0, 0, 0, .65);
+}
+
+.btn_right_side_tip {
+  font-size: 13px;
+  color: #666;
+  font-weight: 400;
+  line-height: 20px;
+  margin-left: -5px
+}
+.form_item_bottom_tip{
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.45);
+  margin-top: 2px;
+}

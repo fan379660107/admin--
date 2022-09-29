@@ -1,0 +1,198 @@
+@import "~antd/lib/style/themes/default.less";
+
+.goods_import {
+  :global {
+    .ant-btn {
+      font-size: 14px !important;
+      padding: 4px 15px;
+      font-weight: 500;
+      height: 32px;
+    }
+  }
+
+  .import_success_con {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+
+  .import_success_tip {
+    color: rgb(102, 102, 102);
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+.import_store_goods {
+  .left_part {
+    width: 220px;
+    background: #FFF;
+    border-radius: 2px;
+    border: 1px solid #EBEDF0;
+    margin-right: 10px;
+    position: relative;
+
+    .title {
+      width: 100%;
+      height: 49px;
+      border-bottom: 1px solid #D8D8D8;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #323233;
+      padding-left: 20px;
+    }
+
+    .goods_cat {
+      width: 100%;
+
+      .cat_item {
+        padding-left: 20px;
+        height: 44px;
+        cursor: pointer;
+        position: relative;
+
+        &:hover {
+          .cat_name {
+            color: #FF701E !important;
+          }
+
+          .to_right_icon svg {
+            fill: #FF701E !important;
+          }
+        }
+
+        .cat_name {
+          font-size: 14px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #323233;
+          line-height: 20px;
+        }
+
+        .to_right_icon {
+          padding-right: 76px;
+          display: flex;
+        }
+      }
+
+      .selected_cat_item {
+        background: #F9F9F9;
+
+        .cat_name {
+          color: #FF701E;
+        }
+      }
+    }
+
+    .more_cat {
+      padding: 25px;
+      padding-left: 15px;
+      width: 800px;
+      background: #F9F9F9;
+      border: 1px solid #DFDFDF;
+      position: absolute;
+      left: 204px;
+      top: 48px;
+      z-index: 999;
+      zoom: 1;
+
+      .item {
+        .second_cat {
+          cursor: pointer;
+          width: 108px;
+          flex-shrink: 0;
+
+          &:hover {
+            .cat_name {
+              color: #FF701E !important;
+            }
+
+            .to_right_icon svg {
+              fill: #FF701E !important;
+            }
+          }
+
+          .cat_name {
+            height: 20px;
+            font-size: 14px;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: 600;
+            color: #4C4C4C;
+            line-height: 20px;
+          }
+
+          .to_right_icon {
+            margin-left: 6px;
+            display: flex;
+          }
+        }
+
+        .third_cat {
+          flex-wrap: wrap;
+          margin-left: 20px;
+
+          .item {
+            height: 20px;
+            font-size: 14px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #999;
+            line-height: 20px;
+            margin-right: 20px;
+            margin-bottom: 15px;
+
+            &:hover {
+              color: #FF701E !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .right_goods {
+    display: flex;
+    flex: 1;
+
+    .operate_wrap {
+      width: 100%;
+      height: 50px;
+      background: #FFF;
+      border: 1px solid #EBEBEB;
+      margin-bottom: -1px;
+
+      .btn {
+        font-size: 13px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #595959;
+        height: 28px;
+        background: #FFF;
+        border-radius: 4px;
+        border: 1px solid #D9D9D9;
+        line-height: 26px;
+        padding: 0 16px;
+        margin-left: 20px;
+
+        &:hover {
+          border-color: #FF701E;
+          color: #FF701E;
+        }
+      }
+      .sel_goods_num_tip{
+        font-size: 13px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #999;
+      }
+      .sel_goods_num{
+        color: #FF6A12;
+        font-weight: bold;
+        margin-left: 2px;
+        margin-right: 2px;
+      }
+    }
+  }
+}
+

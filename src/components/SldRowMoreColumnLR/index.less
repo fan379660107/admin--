@@ -1,0 +1,21 @@
+.sld_det_lr_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  .item {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    .ltext {
+      color: #333;
+      margin-left: 10px;
+    }
+
+    .rtext {
+      color: #666;
+    }
+  }
+}

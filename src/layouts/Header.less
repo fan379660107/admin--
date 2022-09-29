@@ -1,0 +1,18 @@
+.fixedHeader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9;
+  transition: width 0.2s;
+}
+
+:global {
+  .ant-layout-has-sider > .ant-layout-content {
+    margin: 60px 10px 0 110px !important;
+  }
+
+  .ant-form > .ant-form-item > .ant-form-item-children > input {
+    border-color: #E5E5E5;
+  }
+}

@@ -1,0 +1,67 @@
+
+.tableListForm {
+  :global {
+    .ant-form-item {
+      margin-bottom: 24px;
+      margin-right: 0;
+      display: flex;
+      > .ant-form-item-label {
+        width: auto;
+        line-height: 32px;
+        padding-right: 8px;
+      }
+    }
+    .ant-form-item-control-wrapper {
+      flex: 1;
+    }
+  }
+  .submitButtons {
+    white-space: nowrap;
+    margin-bottom: 24px;
+  }
+}
+.editable_cell {
+  position: relative;
+  display: inline-block;
+}
+
+.editable_cell_input_wrapper,
+.editable_cell_text_wrapper {
+  padding-right: 24px;
+}
+
+.editable_cell_text_wrapper {
+  display: inline-block;
+  padding: 5px 24px 5px 5px;
+}
+
+.editable_cell_icon,
+.editable_cell_icon_check {
+  position: absolute;
+  right: 0;
+  width: 20px;
+  cursor: pointer;
+}
+
+.editable_cell_icon {
+  line-height: 24px;
+  display: none;
+}
+
+.editable_cell_icon_check {
+  line-height: 28px;
+}
+
+.editable_cell:hover .editable_cell_icon {
+  display: inline-block;
+}
+
+.editable_cell_icon:hover,
+.editable_cell_icon_check:hover {
+  color: #108ee9;
+}
+
+.editable_add_btn {
+  margin-bottom: 8px;
+}
+
